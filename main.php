@@ -1,7 +1,7 @@
 <?php
 session_start(); 
 ?>
-
+// will be replaced by index.php
 <!DOCTYPE html>
 <html lang="fr">
     <head>

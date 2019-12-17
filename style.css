@@ -1,8 +1,20 @@
 h1, h3{
-    text-align:center;
+    text-align: center;
 }
 
 .news{
-    width:60%;
+    width:75%;
     margin:auto;
+}
+.identification{
+    display: flex;
+    height: 80px;
+    justify-content: flex-end;
+    
+}
+.identification >div{
+    margin : 8px;
+}
+header{
+    background: linear-gradient(#D3D3D3,#90EE90);
 }

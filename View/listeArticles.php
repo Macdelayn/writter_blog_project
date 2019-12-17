@@ -6,8 +6,7 @@
 
 
 <?php
-
-while ($data = $article->fetch())
+foreach ($articles as $data)
 {
 ?>
     <div>
@@ -24,7 +23,7 @@ while ($data = $article->fetch())
     </div>
 <?php
 }
-$articles->closeCursor();
+//$articles->closeCursor();
 ?>
 <?php $content = ob_get_clean(); ?>
 

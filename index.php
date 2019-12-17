@@ -3,7 +3,7 @@
 session_start();
 
 
-require('Controller/Controller1.php');
+require('Controllers/Controller1.php');
 
 $router = new Controller1();
 

@@ -17,10 +17,10 @@
 
 <h2>Commentaires</h2>
 
-<form action="index.php?action=addComment&amp;id=<?= $article['id'] ?>" method="post">
+<form action="index.php?action=addComment&id=<?= $article['id'] ?>" method="post">
     <div>
-        <label for="userId">Auteur</label><br />
-        <input type="text" id="userId" name="author" />
+        <label for="author">Auteur</label><br />
+        <input type="text" id="author" name="author" />
     </div>
     <div>
         <label for="comment">Commentaire</label><br />
@@ -32,10 +32,10 @@
 </form>
 
 <?php
-while ($comment = $comments->fetch())
+foreach ($comments as $comment)
 {
 ?>
-    <p><strong><?= htmlspecialchars($comment['userId']) ?></strong> le <?= $comment['dateComment_fr'] ?></p>
+    <p><strong><?= htmlspecialchars($comment['author']) ?></strong> le <?= $comment['dateComment_fr'] ?></p>
     <p><?= nl2br(htmlspecialchars($comment['comment'])) ?></p>
 <?php
 }
